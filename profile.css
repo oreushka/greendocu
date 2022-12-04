@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Poppins;
+}
+
+header h2 {
+  display: inline-block;
+  padding: 50px;
+  color: #2b5853;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+}
+
+header button {
+  float: right;
+  margin: 100px;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  color: white;
+  width: 230px;
+  border-radius: 20px;
+  background: #2b5853;
+}
+
+.container {
+  width: 360px;
+  margin: auto;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: 0.02em;
+  color: #2b5853;
+}
+
+.container h2 {
+  margin-bottom: 0;
+  color: black;
+}
+
+.container .results p {
+  margin: 0;
+}
+
+.container .results b {
+  font-size: 24px;
+  color: black;
+}
+
+hr {
+  visibility: hidden;
+}
+
+img.avatar {
+  position: absolute;
+  left: 30%;
+}
+
+img.rectangle_16 {
+  position: absolute;
+  right: 30%;
+}
