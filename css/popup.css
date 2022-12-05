@@ -21,8 +21,6 @@
 
 .popup h2 {
   margin-top: 0;
-
-  /* display: block; */
 }
 
 .close-button {
@@ -35,4 +33,5 @@
   background-size: 24px 24px;
   background-position: center center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
