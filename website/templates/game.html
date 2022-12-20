@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block meta %}
+  <title>Судоку</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/game.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/popup.css')}}">
+  <meta name=" viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/pageElements.css')}}">
+{% endblock %}
+
+{% block header %}
+    <h2>greendocu.su</h2>
+    <button>Выйти</button>
+{% endblock %}
+
+{% block body %}
+    <div class="popup-container ">
+        <div class="popup center-place">
+            <a href="#" class="close-button"></a>
+            <h2>Вы выиграли!</h2>
+            <a class="manage-buttons cool-button" href="/game">Ещё раз</a>
+        </div>
+    </div>
+    <section id="page">
+        <div id="sTable"></div>
+    </section>
+    <section class="fixed-container">
+        <div class="select">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </section>
+    <section class="center-place">
+        <a href="/">Начать сначала</a>
+        <button id="jsfetch">fetch json</button>
+    </section>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/game.js')}}"></script>
+
+{% endblock %}

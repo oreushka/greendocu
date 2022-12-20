@@ -1,0 +1,193 @@
+/*----------------------------------------game table-----------------------------------*/
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* background: url("../BG.jpg") no-repeat; */
+    background-size: cover;
+}
+header h2 {
+    display: inline-block;
+    padding: 50px;
+    color: #2B5853;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+}
+header button {
+    float: right;
+    margin: 100px;
+
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    color: white;
+    width: 230px;
+    border-radius: 20px;
+    background: #2B5853;
+}
+#page{
+     margin-top: 5%;
+}
+#sTable{
+    width: 486px;
+    margin: auto;
+    padding: 0;
+}
+.sGroup{
+    background: rgba(193, 212, 225, 0.7);
+}
+.sGroup2{
+    background: rgba(122, 216, 175, 0.7);
+}
+.sBox{
+    float: left;
+    display: inline-block;
+    margin: 1px;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    border-radius: 0px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+.edit{
+    color: rgb(55, 210, 55);
+    -webkit-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+.edit:hover{
+    background: rgba(210, 223, 25, 0.833);
+    cursor: pointer;
+}
+.sBox-active{
+    background: rgb(221, 255, 0);
+}
+.sWrong{
+    background: red;
+}
+
+/*----------------------------------------select panel-----------------------------------*/
+.select{
+    position: fixed;
+}
+.select div{
+    height: 0px;
+    width: 0px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 60px;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    opacity: 0;
+    background: #2c3e50;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s, font-size 0.3s;
+    transition: transform 0.3s, opacity 0.2s, font-size 0.3s;
+}
+.active div{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.active div:hover{
+    opacity: 1;
+    font-size: 40px;
+}
+.selectActive{
+    background: rgb(4, 122, 83);
+}
+.active div:first-child {
+    background: #e74c3c;
+    -webkit-transform: translate3d(0, -80px, 0);
+    transform: translate3d(0, -80px, 0);
+}
+.active div:nth-child(2) {
+    background: #e67e22;
+    -webkit-transform: translate3d(60px, -60px, 0);
+    transform: translate3d(60px, -60px, 0);
+}
+.active div:nth-child(3) {
+    background: #f1c40f;
+    -webkit-transform: translate3d(90px, -8px, 0);
+    transform: translate3d(90px, -8px, 0);
+}
+.active div:nth-child(4) {
+    background: #3498db;
+    -webkit-transform: translate3d(80px, 52px, 0);
+    transform: translate3d(80px, 52px, 0);
+}
+.active div:nth-child(5) {
+    background: #2ecc71;
+    -webkit-transform: translate3d(30px, 88px, 0);
+    transform: translate3d(30px, 88px, 0);
+}
+.active div:nth-child(6) {
+    background: #1abc9c;
+    -webkit-transform: translate3d(-30px, 88px, 0);
+    transform: translate3d(-30px, 88px, 0);
+}
+.active div:nth-child(7) {
+    background: #7f8c8d;
+    -webkit-transform: translate3d(-80px, 52px, 0);
+    transform: translate3d(-80px, 52px, 0);
+}
+.active div:nth-child(8) {
+    background: #9b59b6;
+    -webkit-transform: translate3d(-90px, -8px, 0);
+    transform: translate3d(-90px, -8px, 0);
+}
+.active div:nth-child(9) {
+    background: #34495e;
+    -webkit-transform: translate3d(-60px, -60px, 0);
+    transform: translate3d(-60px, -60px, 0);
+}
+.center-place a {
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    color: white;
+    width: 230px;
+    border-radius: 20px;
+    background: #2B5853;
+}
+/*--------------------------------------responsive design-------------------------------------*/
+/*--------------------for smartphone--------------------*/
+@media only screen and (min-device-width : 320px) and (max-width : 568px){
+    #page{
+        width: 100%;
+        height: 100%;
+    }
+    #sTable{
+        width: 306px;
+        height: 100%;
+        margin: auto;
+    }
+    .sBox{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+}
