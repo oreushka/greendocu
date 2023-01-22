@@ -1,45 +1,47 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block meta %}
+<title>Регистрация</title>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{url_for('static', filename='css/registration.css')}}"
+/>
+{% endblock %} {% block body %}
+<div class="img_container">
+  <p class="intro">
+    <span onclick="window.location.href='/'">greendocu.su</span> - онлайн
+    сборник судоку для вашего досуга. Зарегистрируйтесь сейчас, чтобы сохранить
+    прогресс!
+  </p>
+  <p class="project_work">Университет ИТМО, курсовая работа</p>
+</div>
+<div class="registration_container">
+  <div class="registration_form">
+    <h2>Создайте аккаунт</h2>
+    <p>Эта бесплатная функция поможет избежать потери прогресса</p>
+    <form method="POST" action="">
+      <div class="form_field">
+        <label for="firstName">Имя</label>
+        <input type="text" name="firstName" id="firstName" required />
+      </div>
 
-{% block meta %}
-    <title>Регистрация</title>
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/registration.css')}}">
-{% endblock %}
+      <div class="form_field">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required />
+      </div>
 
-{% block body %}
-    <div class="img_container">
-        <h2>greendocu.su</h2>
-        <p class="intro"><span>greendocu.su</span> - онлайн сборник судоку для вашего досуга. Зарегистрируйтесь сейчас,
-            чтобы сохранить прогресс!</p>
-        <p class="project_work">Университет ИТМО, курсовая работа</p>
-    </div>
-    <div class="registration_container">
-        <div class="registration_form">
-            <h2>Создайте аккаунт</h2>
-            <p>Эта бесплатная функция поможет избежать потери прогресса</p>
-            <form method="POST" action="">
-                <div class="form_field">
-                    <label for="firstName">Имя</label>
-                    <input type="text" name="firstName" id="firstName" required>
-                </div>
+      <div class="form_field">
+        <label for="password1">Пароль</label>
+        <input type="text" name="password1" id="password1" required />
+      </div>
 
-                <div class="form_field">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
+      <div class="form_field">
+        <label for="password2">Повторите пароль</label>
+        <input type="text" name="password2" id="password2" required />
+      </div>
 
-                <div class="form_field">
-                    <label for="password1">Пароль</label>
-                    <input type="text" name="password1" id="password1" required>
-                </div>
-
-                <div class="form_field">
-                    <label for="password2">Повторите пароль</label>
-                    <input type="text" name="password2" id="password2" required>
-                </div>
-
-                <button type="submit">Войти</button>
-            </form>
-            <p class="enter">Уже есть аккаунт? <a href="/">Войти</a></p>
-        </div>
-    </div>
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+    <p class="enter">Уже есть аккаунт? <a href="/">Войти</a></p>
+  </div>
+</div>
 {% endblock %}
