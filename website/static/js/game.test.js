@@ -1,5 +1,4 @@
-// import Sudoku from "./game.mjs";
-const { Sudoku, my_constructor } = require("./game.mjs");
+const { Sudoku } = require("./game.mjs");
 
 let matrix_data = [
   [[7], [2], [], [9], [4], [5], [], [3], []],
@@ -109,4 +108,25 @@ test("__TEST_7__", () => {
   _Sudoku.matrix[7][2] = 1;
   expect(_Sudoku.compareSquare(_Sudoku.matrix, 7, 2)).toBe(0);
   _Sudoku.matrix[7][2] = tmp;
+});
+
+// test win function
+test("__TEST_8__", () => {
+  expect(_Sudoku.win()).toBe(0);
+});
+
+// test delete selectActive class
+test("__TEST_9__", () => {
+  let selectActive = document.createElement("div");
+  $(selectActive).addClass("selectActive");
+  expect(
+    _Sudoku.selectNum(selectActive, "7").hasClass("selectActive", "7")
+  ).toBe(false);
+});
+
+// test setting text in block
+test("__TEST_10__", () => {
+  let selectActive = document.createElement("div");
+  $(selectActive).addClass("selectActive");
+  expect(_Sudoku.selectNum(selectActive, "6").text()).toBe("6");
 });
