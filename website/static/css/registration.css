@@ -1,144 +1,145 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .img_container {
-    width: 55%;
-    height: 100%;
-    display: inline-block;
-    background: fixed url("../img/main_backgraund.jpg") no-repeat 10%;
-    background-size: cover;
-    min-height: 800px;
+  width: 55%;
+  height: 100%;
+  display: inline-block;
+  background: fixed url("../img/main_backgraund.jpg") no-repeat 10%;
+  background-size: cover;
+  min-height: 800px;
 }
 
 .img_container h2 {
-    display: block;
-    padding: 50px;
-    color: white;
-    font-family: Poppins;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 60px;
-    letter-spacing: 0.02em;
-    text-align: left;
+  display: block;
+  padding: 50px;
+  color: white;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 
 .img_container p.intro {
-    display: block;
-    font-family: Poppins;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 48px;
-    letter-spacing: 0em;
-    text-align: left;
-    width: 600px;
-    color: white;
+  display: block;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 600px;
+  color: white;
 
-    margin-bottom: 270px;
-    padding: 50px;
+  margin-bottom: 270px;
+  padding: 50px;
 }
 
 .img_container p.intro span {
-    color: #2B554E;
+  color: #2b554e;
+}
+
+.img_container p.intro span:hover {
+  cursor: pointer;
 }
 
 .img_container p.project_work {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: white;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: white;
 
-    float: right;
-    margin-right: 20px;
+  float: right;
+  margin-right: 20px;
 }
 
-
-
-
 .registration_container {
-    float: right;
-    width: 45%;
+  float: right;
+  width: 45%;
 }
 
 .registration_container .registration_form {
-    padding-left: 50px;
-    padding-top: 100px;
+  padding-left: 50px;
+  padding-top: 100px;
 }
 
 .registration_container .registration_form h2 {
-    font-family: Poppins;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 48px;
-    letter-spacing: 0.02em;
-    margin-bottom: 0;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  margin-bottom: 0;
 }
 
 .registration_container .registration_form p {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    margin-top: 0;
-    color: #8D8D8D;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-top: 0;
+  color: #8d8d8d;
 }
 
 .registration_form label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 8px;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    text-align: left;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 .registration_form input {
-    border: none;
-    border-bottom: 1px solid black;
-    width: 440px;
-    margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 440px;
+  margin-bottom: 30px;
 }
 .registration_form button {
-    width: 435px;
-    height: 65px;
-    background: #2B5853;
-    border-radius: 20px;
-    border: none;
+  width: 435px;
+  height: 65px;
+  background: #2b5853;
+  border-radius: 20px;
+  border: none;
 
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0.02em;
-    color: white;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: white;
 
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .registration_container .registration_form p.enter {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.02em;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 
-    color: #919A99;
+  color: #919a99;
 }
 
 .registration_container .registration_form p.enter a {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0.02em;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.02em;
 
-    color: #366764;
-    text-decoration: none;
+  color: #366764;
+  text-decoration: none;
 }

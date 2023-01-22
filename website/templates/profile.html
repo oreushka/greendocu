@@ -1,28 +1,64 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block meta %}
+<title>Профиль</title>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{url_for('static', filename='css/profile.css')}}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{url_for('static', filename='css/game.css')}}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{url_for('static', filename='css/pageElements.css')}}"
+/>
 
-{% block meta %}
-  <title>Профиль</title>
-  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/profile.css')}}">
-{% endblock %}
-
-{% block header %}
-
-  <h2>greendocu.su</h2>
-  <button>Выйти</button>
-
-{% endblock %}
-
-{% block body %}
-  <img src="{{url_for('static', filename='img/avatar.jpg')}}" class="avatar">
-  <img src="{{url_for('static', filename='img/rectangle_16.jpg')}}" class="rectangle_16">
-  <div class="container">
-    <h2>{{user.first_name}}</h2>
-    <p class="email"><span>Email:</span> {{user.email}}</p>
-    <hr>
-    <div class="results">
-      <p>Разгадано судоку: <b>{{user.victories}}</b></p>
-      <p>Сыграно всего: <b>{{user.games}}</b></p>
-      <p>Процент побед: <b>{{(user.victories+1)//(user.games+1)*100}}</b></p>
-    </div>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{url_for('static', filename='css/popup.css')}}"
+/>
+{% endblock %} {% block header %} {% endblock %} {% block body %} {% if win ==
+True %}
+<div class="popup-container">
+  <div class="popup">
+    <h2>Вы выиграли!</h2>
+    <a href="#" class="close-button"></a>
+    <a class="greenButton popup-button" href="/">Ещё раз</a>
   </div>
-  {% endblock %}
+</div>
+{% endif %}
+
+<div class="container">
+  <img src="{{url_for('static', filename='img/avatar.jpg')}}" class="avatar" />
+  <img
+    src="{{url_for('static', filename='img/rectangle_16.jpg')}}"
+    class="rectangle_16"
+  />
+
+  <h2>{{user.first_name}}</h2>
+  <p class="email"><span>Email:</span> {{user.email}}</p>
+  <hr />
+  <div class="results">
+    <p>Разгадано судоку: <b>{{user.victories}}</b></p>
+    <p>Сыграно всего: <b>{{user.games}}</b></p>
+    {% if user.games == 0 %}
+    <p>Процент побед: <b>0</b></p>
+    {% else %}
+    <p>Процент побед: <b>{{(user.victories*100)//user.games}}%</b></p>
+    {% endif %}
+  </div>
+</div>
+
+<script
+  type="text/javascript"
+  src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="{{url_for('static', filename='js/profile.js')}}"
+></script>
+{% endblock %}
