@@ -24,13 +24,6 @@
   href="{{url_for('static', filename='css/pageElements.css')}}"
 />
 {% endblock %} {% block header %} {% endblock %} {% block body %}
-<div class="popup-container">
-  <div class="popup center-place">
-    <a href="#" class="close-button"></a>
-    <h2>Вы выиграли!</h2>
-    <a class="manage-buttons cool-button" href="/game">Ещё раз</a>
-  </div>
-</div>
 <section id="page">
   <div id="sTable"></div>
 </section>
@@ -55,8 +48,8 @@
   src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"
 ></script>
 <script
-  type="text/javascript"
-  src="{{url_for('static', filename='js/game.js')}}"
+  type="module"
+  src="{{url_for('static', filename='js/game.mjs')}}"
 ></script>
 
 {% endblock %}

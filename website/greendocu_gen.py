@@ -40,7 +40,7 @@ def delite_num(matrix:list, count:int):
     for i in range(count):
         row, col = random.randint(1,8), random.randint(1,8)
 
-        if matrix[row][col] == 0:
+        while matrix[row][col] == 0:
             row= (row + random.randint(1,8)) % 9
             col= (col + random.randint(1,8)) % 9
         matrix[row][col] = 0
@@ -49,18 +49,19 @@ def delite_num(matrix:list, count:int):
 
 
 def remake_for_js(matrix):
+    to_del = sum([row.count(0) for row in matrix])
     matrix = [[[i] if i!=0 else [] for i in row] for row in matrix]
-    return matrix
+    return matrix, to_del
 
 
-def make_matrix(to_del: int):
+def make_matrix(to_del: int, user:int = 1):
     matrix = _create_matrix()
-    matrix = _shuffle_row(matrix, random.randint(4, 10))
-    matrix = _shuffle_column(matrix, random.randint(4, 10))
+    matrix = _shuffle_row(matrix, random.randint(20, 100))
+    matrix = _shuffle_column(matrix, random.randint(20, 100))
     matrix = delite_num(matrix, to_del)
-    matrix = remake_for_js(matrix)
+    matrix, to_del = remake_for_js(matrix)
 
-    return {"matrix_const":matrix}
+    return {"matrix_const":matrix, "matrix_empty":to_del}
 
 if __name__=="__main__":
     for row in make_matrix(to_del = 20):

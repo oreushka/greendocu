@@ -1,38 +1,41 @@
-{% extends "base.html" %}
-
-{% block meta %}
+{% extends "base.html" %} {% block meta %}
 <title>Вход</title>
-<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/enter.css')}}">
-{% endblock %}
-
-{% block header %}
-    <h2>greendocu.su</h2>
-{% endblock %}
-
-{% block body %}
-<!--<img src="img/rectangle_16.jpg" class="rectangle_16">-->
-<!--<img src="img/rectangle_14.png" class="rectangle_14">-->
-<!--<img src="img/rectangle_13.png" class="rectangle_13">-->
-<!--<div class="rectangle_13"></div>-->
-<!--<img src="img/rectangle_15.png" class="rectangle_15">-->
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{url_for('static', filename='css/enter.css')}}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{url_for('static', filename='css/game.css')}}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{url_for('static', filename='css/pageElements.css')}}"
+/>
+{% endblock %} {% block header %} {% endblock %} {% block body %}
 <div class="container">
-    <h2>Войдите в аккаунт</h2>
-    <p>Введите email и пароль</p>
-    <form method="POST" action="">
-        <div class="form_field">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required>
-        </div>
+  <h2>Войдите в аккаунт</h2>
+  <p>Введите email и пароль</p>
+  <form method="POST" action="">
+    <div class="form_field">
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required />
+    </div>
 
-        <div class="form_field">
-            <label for="password">Пароль</label>
-            <input type="text" name="password" id="password" required>
-        </div>
-        <p class="recovering">Забыли пароль? <a href="">Восстановить</a></p>
+    <div class="form_field">
+      <label for="password">Пароль</label>
+      <input type="text" name="password" id="password" required />
+    </div>
+    <p class="recovering">Забыли пароль? <a href="">Восстановить</a></p>
 
-        <button type="submit">Создать аккаунт</button>
-    </form>
-    <p class="registration">Ещё нет аккаунта? <a href="/sign-up">Зарегистрироваться</a></p>
+    <button type="submit">Войти</button>
+  </form>
+  <p class="registration">
+    Ещё нет аккаунта? <a href="/sign-up">Зарегистрироваться</a>
+  </p>
 </div>
 
 {% endblock %}
