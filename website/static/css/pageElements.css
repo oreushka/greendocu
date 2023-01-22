@@ -53,7 +53,3 @@ a:hover {
 a:active {
   background: rgb(73, 60, 59);
 }
-.manage-buttons {
-  background-color: rgb(65, 36, 0);
-  border: 1px solid black;
-}

@@ -1,120 +1,120 @@
 body {
-    margin: 0;
-    font-family: Poppins;
+  margin: 0;
+  font-family: Poppins;
 }
 
 header h2 {
-    display: block;
-    padding: 50px;
-    color: #2B5853;
-    font-family: Poppins;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 60px;
-    letter-spacing: 0.02em;
+  display: block;
+  padding: 50px;
+  color: #2b5853;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.02em;
 }
 
 img {
-    position: absolute;
-    opacity: 0.4;
-    z-index: 0;
+  position: absolute;
+  opacity: 0.4;
+  z-index: 0;
 }
 
 img.rectangle_13 {
-    bottom: 0;
-    right: 20%;
+  bottom: 0;
+  right: 20%;
 }
 
 img.rectangle_14 {
-    left: 30%;
-    top: 20%;
+  left: 30%;
+  top: 20%;
 }
 
 img.rectangle_15 {
-    position: absolute;
-    left: 20%;
+  position: absolute;
+  left: 20%;
 }
 
 img.rectangle_16 {
-    right: 30%;
+  right: 30%;
 }
 
 .container {
-    height: 600px;
-    width: 440px;
-    margin: auto;
-    position: relative;
-    z-index: 9;
+  height: 600px;
+  width: 440px;
+  margin: auto;
+  position: relative;
+  z-index: 9;
 }
 
 .container h2 {
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 48px;
-    letter-spacing: 0.02em;
-    margin-bottom: 0;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  margin-bottom: 0;
 }
 
 .container p {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.02em;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 
-    color: #8D8D8D;
-    margin-top: 0;
+  color: #8d8d8d;
+  margin-top: 0;
 }
 
-.container>p {
-    margin-bottom: 130px;
+.container > p {
+  margin-bottom: 130px;
 }
 
 .container p a {
-    color: #366764;
-    text-decoration: none;
+  color: #366764;
+  text-decoration: none;
 }
 
 .container .form_field:first-child {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .container label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 8px;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.02em;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 }
 
 .container input {
-    border: none;
-    border-bottom: 1px solid black;
-    width: 440px;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 440px;
 }
 
 .container button {
-    width: 435px;
-    height: 65px;
-    border-radius: 20px;
-    background: #2B5853;
+  width: 435px;
+  height: 65px;
+  border-radius: 20px;
+  background: #2b5853;
 
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0.02em;
-    color: white;
-    position: relative;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: white;
+  position: relative;
 
-    margin-bottom: 70px;
-    border: none;
-    margin-top: 30px;
+  margin-bottom: 70px;
+  border: none;
+  margin-top: 30px;
 }
 
 .container p.registration a {
-    font-size: 20px;
+  font-size: 20px;
 }
