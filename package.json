@@ -1,0 +1,33 @@
+{
+  "name": "greendocu_2",
+  "version": "1.0.0",
+  "description": "Check out our design in [Figma](https://www.figma.com/file/7NqO3rY8octeNcXfofowjX/Untitled?node-id=0%3A1&t=WLnND5wiAxwcmKHV-1 \"The best online-sudoku design you've ever seen\").",
+  "main": "game.js",
+  "scripts": {
+    "test": "jest",
+    "start": "python3 main.py",
+    "test:cypress": "start-server-and-test start http://127.0.0.1:5000 cypress",
+    "cypress": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-proposal-export-default-from": "^7.18.10",
+    "@babel/preset-env": "^7.20.2",
+    "@cypress/code-coverage": "^3.10.0",
+    "babel-jest": "^29.3.1",
+    "cypress": "^12.3.0",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "jquery": "^3.6.3",
+    "start-server-and-test": "^1.15.2"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "python-shell": "^3.0.1",
+    "request": "^2.88.2"
+  }
+}
