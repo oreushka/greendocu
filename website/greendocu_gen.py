@@ -40,7 +40,7 @@ def delite_num(matrix:list, count:int):
     for i in range(count):
         row, col = random.randint(1,8), random.randint(1,8)
 
-        if matrix[row][col] == 0:
+        while matrix[row][col] == 0:
             row= (row + random.randint(1,8)) % 9
             col= (col + random.randint(1,8)) % 9
         matrix[row][col] = 0
