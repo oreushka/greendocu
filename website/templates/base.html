@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    {% block meta %} {% endblock %}
+  </head>
+
+  <header>
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %} {% for category, message in messages %} {% if category ==
+    "error" %}
+    <!-- САНЯ ПАМАГИ ЧТОБЫ АНО НЕ СДВИГАЛА ЭЛЕМЕНТЫ ПАМЖАЛУМСТА!!!!!!!!-->
+    <div
+      class="alert alert-danger alert-dismissable fade show"
+      role="alert"
+      position="absolute"
+    >
+      {{message}}
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="alert"
+        aria-hidden="true"
+        data-bs-dismiss="alert"
+      ></button>
+    </div>
+
+    {% else %}
+    <!-- И ТУТА!!!-->
+    <div
+      class="alert alert-success alert-dismissable fade show"
+      role="alert"
+      position="absolute"
+    >
+      {{message}}
+      <button
+        type="btn"
+        class="btn-close"
+        aria-label="alert"
+        aria-hidden="true"
+        data-bs-dismiss="alert"
+      ></button>
+    </div>
+    {% endif %} {% endfor %} {% endif %} {% endwith %} {% block header %} {%
+    endblock %}
+  </header>
+
+  <body>
+    {% if request.path != '/sign-up' %}
+    <div class="header fixed-container">
+      <nav>
+        <div class="greenHeader" onclick="window.location.href='/'">
+          greendocu
+        </div>
+      </nav>
+      {% if user.is_authenticated %} {% if request.path == '/profile' %}
+      <div class="">
+        <a
+          class="nav-link greenButton white-link"
+          aria-current="page"
+          href="/logout"
+          >Выйти</a
+        >
+      </div>
+      {% else %}
+      <div class="">
+        <a
+          class="nav-link greenButton white-link"
+          aria-current="page"
+          href="/profile"
+          >Профиль</a
+        >
+      </div>
+      {% endif %} {%else%}
+      <div class="">
+        <a
+          class="nav-link greenButton white-link"
+          aria-current="page"
+          href="/login"
+          >Войти</a
+        >
+      </div>
+      {% endif %}
+    </div>
+    {% endif %} {% block body %} {% endblock %}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
